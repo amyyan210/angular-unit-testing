@@ -46,7 +46,6 @@ describe('HeroesComponent (deep tests)', () => {
 
     for(let i = 0; i < heroComponentDEs.length; i++) {
       expect(heroComponentDEs[i].componentInstance.hero).toEqual(HEROES[i]);
-
     }
   });
 
