@@ -5,6 +5,7 @@ import { HeroService } from '../hero.service';
 import { of } from 'rxjs/observable/of';
 import { EventEmitter } from 'selenium-webdriver';
 import { By } from '@angular/platform-browser';
+import { Hero } from '../hero';
 
 describe('HeroesComponent (shallow tests)', () => {
   let fixture: ComponentFixture<HeroesComponent>;
@@ -39,8 +40,6 @@ describe('HeroesComponent (shallow tests)', () => {
       //schemas: [NO_ERRORS_SCHEMA]
     })
     fixture = TestBed.createComponent(HeroesComponent);
-
-
   })
 
   it('Should set heroes correctly from the service', () => {
